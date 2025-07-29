@@ -201,10 +201,10 @@ public class TestCase {
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@href='/search']"))).click();
 		WebElement searchBox = wait
 				.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@type='text']")));
-		searchBox.sendKeys("Love kills", Keys.ENTER);
+		searchBox.sendKeys("Prati Roju Pandage", Keys.ENTER);
 
 		WebElement videoThumb = wait
-				.until(ExpectedConditions.elementToBeClickable(By.xpath("//img[@alt='Love kills']")));
+				.until(ExpectedConditions.elementToBeClickable(By.xpath("//img[@alt='Prati Roju Pandage']")));
 		videoThumb.click();
 
 		// Step 3: Watch Video
@@ -633,9 +633,9 @@ public class TestCase {
 		driver.findElement(By.xpath("//a[@href='/search']")).click();
 		Thread.sleep(3000);
 		WebElement searchBox = driver.findElement(By.xpath("//input[@type='text']"));
-		searchBox.sendKeys("Hello pooja");
+		searchBox.sendKeys("Prati Roju Pandage");
 		WebElement ClickOnvideo = wait
-				.until(ExpectedConditions.elementToBeClickable(By.xpath("//img[@alt='Hello Pooja']")));
+				.until(ExpectedConditions.elementToBeClickable(By.xpath("//img[@alt='Prati Roju Pandage']")));
 		ClickOnvideo.click();
 
 		Thread.sleep(10000);

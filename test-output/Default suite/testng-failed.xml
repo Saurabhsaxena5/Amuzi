@@ -5,7 +5,7 @@
     <classes>
       <class name="Chull.TestCase">
         <methods>
-          <include name="viewAllTest"/>
+          <include name="playVideoTest"/>
           <include name="teardown"/>
           <include name="setup"/>
         </methods>
