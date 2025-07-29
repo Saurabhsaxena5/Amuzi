@@ -3,6 +3,7 @@ package Chull;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -285,86 +286,88 @@ public class Testcase2 extends TestCase {
 	
 	@Test
 	public void clickcancelButtonOnrazorpay() {
-		try {
-			// Login steps
-			driver.findElement(By.xpath("//a[@href='/login']")).click();
-			Thread.sleep(2000);
+	    try {
+	        // Login steps
+	        driver.findElement(By.xpath("//a[@href='/login']")).click();
+	        Thread.sleep(2000);
 
-			driver.findElement(By.xpath("//button[normalize-space(.)='Login with Email']")).click();
-			driver.findElement(By.xpath("//input[@placeholder='Enter Email']")).sendKeys("rajnish.kumar@unvii.com");
-			driver.findElement(By.xpath("//button[normalize-space()='Send OTP']")).click();
-			driver.findElement(By.xpath("//input[@class='otp-input form-control']")).sendKeys("1234");
-			driver.findElement(By.xpath("//button[normalize-space()='Verify OTP']")).click();
+	        driver.findElement(By.xpath("//button[normalize-space(.)='Login with Email']")).click();
+	        driver.findElement(By.xpath("//input[@placeholder='Enter Email']")).sendKeys("rajnish.kumar@unvii.com");
+	        driver.findElement(By.xpath("//button[normalize-space()='Send OTP']")).click();
+	        driver.findElement(By.xpath("//input[@class='otp-input form-control']")).sendKeys("1234");
+	        driver.findElement(By.xpath("//button[normalize-space()='Verify OTP']")).click();
 
-			// Select a movie
-			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//img[@class='Movieslogo'])[5]"))).click();
-			Thread.sleep(4000);
+	        // Select a movie
+	        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//img[@class='Movieslogo'])[5]"))).click();
+	        Thread.sleep(4000);
 
-			// Choose subscription plan
-			WebElement clickOnChoosePlan = wait.until(ExpectedConditions.elementToBeClickable(
-					By.xpath("(//button[@class='subscription_button btn btn-lg btn-block planBtn'])[1]")));
-			clickOnChoosePlan.click();
-			Thread.sleep(4000);
+	        // Choose subscription plan
+	        WebElement clickOnChoosePlan = wait.until(ExpectedConditions.elementToBeClickable(
+	                By.xpath("(//button[@class='subscription_button btn btn-lg btn-block planBtn'])[1]")));
+	        clickOnChoosePlan.click();
+	        Thread.sleep(4000);
 
-			// Apply coupon
-			wait.until(
-					ExpectedConditions.elementToBeClickable(By.xpath("//input[@placeholder='Enter coupon code...']")))
-					.sendKeys("t7fnlx");
+	        // Apply coupon
+	        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@placeholder='Enter coupon code...']")))
+	                .sendKeys("t7fnlx");
 
-			WebElement applyOnCouponCode = wait
-					.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@class='apply-button']")));
-			applyOnCouponCode.click();
-			Thread.sleep(4000);
+	        WebElement applyOnCouponCode = wait
+	                .until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@class='apply-button']")));
+	        applyOnCouponCode.click();
+	        Thread.sleep(4000);
 
-			// Confirm coupon application
-			WebElement click = driver.findElement(By.xpath("//div[@class='text']"));
-			System.out.println(click.getText());
+	        // Confirm coupon application
+	        WebElement click = driver.findElement(By.xpath("//div[@class='text']"));
+	        System.out.println(click.getText());
 
-			String checkCouponCodeApply = wait
-					.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[@class='error-message']")))
-					.getText();
+	        String checkCouponCodeApply = wait
+	                .until(ExpectedConditions.elementToBeClickable(By.xpath("//span[@class='error-message']")))
+	                .getText();
 
-			if ("Coupon applied".equals(checkCouponCodeApply)) {
-				System.out.println("Applied coupon code");
-			} else {
-				System.out.println("Something went wrong");
-			}
+	        if ("Coupon applied".equals(checkCouponCodeApply)) {
+	            System.out.println("Applied coupon code");
+	        } else {
+	            System.out.println("Something went wrong");
+	        }
 
-			// Click Razorpay payment button
-			WebElement clickOnRazorpayButton = wait
-					.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@class='text']")));
-			clickOnRazorpayButton.click();
+	        // Click Razorpay payment button
+	        WebElement clickOnRazorpayButton = wait
+	                .until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@class='text']")));
+	        clickOnRazorpayButton.click();
 
-			Thread.sleep(4000);
+	        Thread.sleep(4000);
 
-			// Switch to Razorpay iframe
-			WebElement razorpayFrame = wait
-					.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("iframe[src*='razorpay']")));
-			driver.switchTo().frame(razorpayFrame);
+	        // Switch to Razorpay iframe
+	        WebElement razorpayFrame = wait.until(ExpectedConditions.presenceOfElementLocated(
+	                By.cssSelector("iframe[src*='razorpay']")));
+	        driver.switchTo().frame(razorpayFrame);
 
-			// Enter mobile number
-			WebElement mobileInput = wait
-					.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@placeholder='Mobile number']")));
-			mobileInput.clear();
-			mobileInput.sendKeys("8920689888");
-			Thread.sleep(5000);
+	        // Enter mobile number
+	        WebElement mobileInput = wait.until(
+	                ExpectedConditions.elementToBeClickable(By.xpath("//input[@placeholder='Mobile number']")));
+	        mobileInput.clear();
+	        mobileInput.sendKeys("8920689888");
+	        Thread.sleep(3000);
 
-			// Click continue (optional)
-			WebElement continueBtn = driver.findElement(By.xpath("//button[normalize-space()='Continue']"));
-			continueBtn.click();
+	        // Click Continue in Razorpay iframe
+	        WebElement continueBtn = wait.until(
+	                ExpectedConditions.elementToBeClickable(By.xpath("//button[normalize-space()='Continue']")));
+	        continueBtn.click();
 
-			// Switch back to main content
-			driver.switchTo().defaultContent();
+	        Thread.sleep(4000); // Optional wait after clicking Continue
 
-			// Optional: Confirm Razorpay container is visible
-			boolean check = driver.findElement(By.id("razorpay-checkout-v2-container")).isDisplayed();
-			System.out.println("Razorpay modal displayed: " + check);
-			
-			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@title=\"Close Checkout\"]"))).click();
+	        // Wait for Close button and click it via JavaScript if needed
+	        WebElement closeBtn = wait.until(
+	                ExpectedConditions.elementToBeClickable(By.cssSelector("button[title*='Close']")));
+	        ((JavascriptExecutor) driver).executeScript("arguments[0].click();", closeBtn);
 
-		} catch (Exception e) {
-			System.out.println("Exception: " + e.getMessage());
-		}
-		
+	        // Optional: Switch back to main content
+	        driver.switchTo().defaultContent();
+
+	        System.out.println("Razorpay modal closed.");
+
+	    } catch (Exception e) {
+	        System.out.println("Exception: " + e.getMessage());
+	    }
 	}
 }

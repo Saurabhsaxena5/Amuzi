@@ -145,7 +145,7 @@ public class TestCase {
 		driver.findElement(By.xpath("//a[@href='/search']")).click();
 		Thread.sleep(3000);
 		WebElement searchBox = driver.findElement(By.xpath("//input[@type='text']"));
-		searchBox.sendKeys("Love kills", Keys.ENTER);
+		searchBox.sendKeys("Prati Roju Pandage", Keys.ENTER);
 		Thread.sleep(3000);
 		WebElement checkonvideo = driver.findElement(By.xpath("//img[@class=\"img-top\"]"));
 		if (checkonvideo.isDisplayed()) {
@@ -461,10 +461,14 @@ public class TestCase {
 		// Wait for navigation or home screen to load fully
 		Thread.sleep(3000); // Adjust depending on speed or replace with proper wait
 
+		
+		JavascriptExecutor jse=(JavascriptExecutor)driver;
+		jse.executeScript("window.scrollBy(0,300)");
+		
 		// Wait until the "Top 10 in India" link is present and clickable
 		try {
 			WebElement top10Link = wait
-					.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[contains(@href,'free-episode')]")));
+					.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@href=\"/View/home/top-10-in-india/103\"]")));
 			top10Link.click();
 		} catch (TimeoutException e) {
 			System.out.println("Top 10 link not clickable: " + e.getMessage());

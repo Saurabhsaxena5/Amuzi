@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="574.731" tests="32" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="879.095" tests="32" errors="0" skipped="0" failures="4">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
-    <property name="sun.java.command" value="C:\Windows\Temp\surefire17554720210338002214\surefirebooter-20250721165446996_3.jar C:\Windows\Temp\surefire17554720210338002214 2025-07-21T16-54-46_731-jvmRun1 surefire-20250721165446996_1tmp surefire_0-20250721165446996_2tmp"/>
+    <property name="sun.java.command" value="C:\Windows\Temp\surefire1644749027250477082\surefirebooter-20250729111142127_3.jar C:\Windows\Temp\surefire1644749027250477082 2025-07-29T11-11-41_859-jvmRun1 surefire-20250729111142127_1tmp surefire_0-20250729111142127_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\Yash\eclipse-workspace\NewChull\target\test-classes;C:\Users\Yash\eclipse-workspace\NewChull\target\classes;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\testng\testng\7.11.0\testng-7.11.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-java\4.33.0\selenium-java-4.33.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-api\4.33.0\selenium-api-4.33.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.33.0\selenium-chrome-driver-4.33.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.33.0\selenium-chromium-driver-4.33.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-json\4.33.0\selenium-json-4.33.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.33.0\selenium-manager-4.33.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v135\4.33.0\selenium-devtools-v135-4.33.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v136\4.33.0\selenium-devtools-v136-4.33.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v137\4.33.0\selenium-devtools-v137-4.33.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.33.0\selenium-edge-driver-4.33.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.33.0\selenium-firefox-driver-4.33.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-http\4.33.0\selenium-http-4.33.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.33.0\selenium-ie-driver-4.33.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.33.0\selenium-remote-driver-4.33.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\google\guava\guava\33.4.8-jre\guava-33.4.8-jre.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\google\guava\failureaccess\1.0.3\failureaccess-1.0.3.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\google\errorprone\error_prone_annotations\2.36.0\error_prone_annotations-2.36.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\opentelemetry\opentelemetry-api\1.50.0\opentelemetry-api-1.50.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\opentelemetry\opentelemetry-context\1.50.0\opentelemetry-context-1.50.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.50.0\opentelemetry-exporter-logging-1.50.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.50.0\opentelemetry-sdk-common-1.50.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.50.0\opentelemetry-sdk-extension-autoconfigure-spi-1.50.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.50.0\opentelemetry-sdk-extension-autoconfigure-1.50.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.50.0\opentelemetry-sdk-trace-1.50.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.50.0\opentelemetry-sdk-1.50.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.50.0\opentelemetry-sdk-metrics-1.50.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.50.0\opentelemetry-sdk-logs-1.50.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\net\bytebuddy\byte-buddy\1.17.5\byte-buddy-1.17.5.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-os\4.33.0\selenium-os-4.33.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.33.0\selenium-safari-driver-4.33.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-support\4.33.0\selenium-support-4.33.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\github\bonigarcia\webdrivermanager\5.6.2\webdrivermanager-5.6.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\github\docker-java\docker-java\3.3.4\docker-java-3.3.4.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\github\docker-java\docker-java-core\3.3.4\docker-java-core-3.3.4.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\github\docker-java\docker-java-api\3.3.4\docker-java-api-3.3.4.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\bouncycastle\bcpkix-jdk18on\1.76\bcpkix-jdk18on-1.76.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\bouncycastle\bcprov-jdk18on\1.76\bcprov-jdk18on-1.76.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\bouncycastle\bcutil-jdk18on\1.76\bcutil-jdk18on-1.76.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.3.4\docker-java-transport-httpclient5-3.3.4.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\github\docker-java\docker-java-transport\3.3.4\docker-java-transport-3.3.4.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\commons\commons-lang3\3.13.0\commons-lang3-3.13.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\commons\commons-compress\1.24.0\commons-compress-1.24.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Windows\Temp\surefire17554720210338002214\surefirebooter-20250721165446996_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Windows\Temp\surefire1644749027250477082\surefirebooter-20250729111142127_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.12+8-LTS-286"/>
@@ -49,275 +49,402 @@
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="native.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk-17\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\apache-maven-3.9.9/bin;C:\Program Files\Java\jdk-17/bin;C:\Program Files\Java\jdk-17/bin;C:\app\Administrator\product\21c\dbhomeXE\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files;C:\Program Files\Java\jdk-23\bin;C:\Users\Yash\apache-maven-3.9.9\bin;C:\WINDOWS\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-17\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\apache-maven-3.9.9/bin;C:\Program Files\Java\jdk-17/bin;C:\Program Files\Java\jdk-17/bin;C:\app\Administrator\product\21c\dbhomeXE\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files;C:\Program Files\Java\jdk-23\bin;C:\Users\Yash\apache-maven-3.9.9\bin;C:\Program Files\Java\jdk-23\lib;C:\Program Files\nodejs\;C:\Users\Yash\AppData\Roaming\npm;C:\Users\Yash\AppData\Local\Android\Sdk\platform-tools;C:\Users\Yash\AppData\Local\Android\Sdk\build-tools;C:\Users\Yash\AppData\Local\Android\Sdk\platforms;C:\Windows\System32;C:\WINDOWS\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;."/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
     <property name="java.vendor" value="Oracle Corporation"/>
     <property name="java.vm.version" value="17.0.12+8-LTS-286"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="loginWithMailTest" classname="Chull.TestCase" time="3.113">
+  <testcase name="loginWithMailTest" classname="Chull.TestCase" time="3.21">
     <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
 SLF4J(W): Defaulting to no-operation (NOP) logger implementation
 SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
-Jul 21, 2025 4:54:55 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jul 29, 2025 11:11:49 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
 ]]></system-err>
   </testcase>
-  <testcase name="loginWithPhoneNumber" classname="Chull.TestCase" time="9.017">
-    <system-err><![CDATA[Jul 21, 2025 4:55:03 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="loginWithPhoneNumber" classname="Chull.TestCase" time="9.13">
+    <system-err><![CDATA[Jul 29, 2025 11:12:25 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
 ]]></system-err>
   </testcase>
-  <testcase name="verifyCurrentUrlTest" classname="Chull.TestCase" time="0.028">
+  <testcase name="verifyCurrentUrlTest" classname="Chull.TestCase" time="0.034">
     <system-out><![CDATA[True 
 ]]></system-out>
-    <system-err><![CDATA[Jul 21, 2025 4:55:17 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Jul 29, 2025 11:12:39 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
 ]]></system-err>
   </testcase>
-  <testcase name="updateProfileTest" classname="Chull.TestCase" time="13.876">
-    <system-err><![CDATA[Jul 21, 2025 4:55:21 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="updateProfileTest" classname="Chull.TestCase" time="14.1">
+    <system-err><![CDATA[Jul 29, 2025 11:12:43 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
 ]]></system-err>
   </testcase>
-  <testcase name="searchVideoTest" classname="Chull.TestCase" time="19.347">
-    <system-out><![CDATA[Video is visible
-]]></system-out>
-    <system-err><![CDATA[Jul 21, 2025 4:55:39 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
-]]></system-err>
-  </testcase>
-  <testcase name="wrongOtpLoginTest" classname="Chull.TestCase" time="7.144">
-    <system-out><![CDATA[Verify OTP
-]]></system-out>
-    <system-err><![CDATA[Jul 21, 2025 4:56:04 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
-]]></system-err>
-  </testcase>
-  <testcase name="playVideoTest" classname="Chull.TestCase" time="14.723">
-    <system-out><![CDATA[Popup closed.
-Total iframes found: 7
-Iframe src: https://td.doubleclick.net/td/rul/17013215611?random=1753097177729&cv=11&fst=1753097177729&fmt=3&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be57g1h1z89221036923za200zb9221036923&gcd=13l3l3l3l1l1&dma=0&tag_exp=101509157~103116026~103200004~103233427~104684208~104684211~104952206~104952208&u_w=1024&u_h=768&url=https%3A%2F%2Fchull.tv%2F&hn=www.googleadservices.com&frm=0&npa=0&pscdl=noapi&auid=1931096598.1753097178&uaa=x86&uab=64&uafvl=Not)A%253BBrand%3B8.0.0.0%7CChromium%3B138.0.7204.158%7CGoogle%2520Chrome%3B138.0.7204.158&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&fledge=1&data=event%3Dgtag.config
-Iframe src: https://td.doubleclick.net/td/rul/17013215611?random=1753097177791&cv=11&fst=1753097177791&fmt=3&bg=ffffff&guid=ON&async=1&gtm=45be57g1h1z89221036923za200zb9221036923&gcd=13l3l3l3l1l1&dma=0&tag_exp=101509157~103116026~103200004~103233427~104684208~104684211~104952206~104952208&u_w=1024&u_h=768&url=https%3A%2F%2Fchull.tv%2F&hn=www.googleadservices.com&frm=0&npa=0&pscdl=noapi&auid=1931096598.1753097178&uaa=x86&uab=64&uafvl=Not)A%253BBrand%3B8.0.0.0%7CChromium%3B138.0.7204.158%7CGoogle%2520Chrome%3B138.0.7204.158&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&fledge=1&_tu=Cg
-Iframe src: 
-Iframe src: https://td.doubleclick.net/td/rul/17013215611?random=1753097180544&cv=11&fst=1753097180544&fmt=3&bg=ffffff&guid=ON&async=1&en=form_start&gtm=45be57g1h1za200zb9221036923&gcd=13l3l3l3l1l1&dma=0&tag_exp=101509157~103116026~103200004~103233427~104684208~104684211~104952206~104952208&u_w=1024&u_h=768&url=https%3A%2F%2Fchull.tv%2Flogin&hn=www.googleadservices.com&frm=0&tiba=Chull%20Tv%20-%20OTT%20Platform%20for%20Web%20Series%20Movies%20Entertainment%20Show&npa=0&pscdl=noapi&auid=1931096598.1753097178&uaa=x86&uab=64&uafvl=Not)A%253BBrand%3B8.0.0.0%7CChromium%3B138.0.7204.158%7CGoogle%2520Chrome%3B138.0.7204.158&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&fledge=1&data=event%3Dform_start
-Iframe src: https://td.doubleclick.net/td/rul/17013215611?random=1753097180562&cv=11&fst=1753097180562&fmt=3&bg=ffffff&guid=ON&async=1&en=form_submit&gtm=45be57g1h1za200zb9221036923&gcd=13l3l3l3l1l1&dma=0&tag_exp=101509157~103116026~103200004~103233427~104684208~104684211~104952206~104952208&u_w=1024&u_h=768&url=https%3A%2F%2Fchull.tv%2Flogin&hn=www.googleadservices.com&frm=0&tiba=Chull%20Tv%20-%20OTT%20Platform%20for%20Web%20Series%20Movies%20Entertainment%20Show&npa=0&pscdl=noapi&auid=1931096598.1753097178&uaa=x86&uab=64&uafvl=Not)A%253BBrand%3B8.0.0.0%7CChromium%3B138.0.7204.158%7CGoogle%2520Chrome%3B138.0.7204.158&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&fledge=1&data=event%3Dform_submit
-Iframe src: https://td.doubleclick.net/td/rul/17013215611?random=1753097180875&cv=11&fst=1753097180875&fmt=3&bg=ffffff&guid=ON&async=1&en=form_submit&gtm=45be57g1h1za200zb9221036923&gcd=13l3l3l3l1l1&dma=0&tag_exp=101509157~103116026~103200004~103233427~104684208~104684211~104952206~104952208&u_w=1024&u_h=768&url=https%3A%2F%2Fchull.tv%2Flogin&hn=www.googleadservices.com&frm=0&tiba=Chull%20Tv%20-%20OTT%20Platform%20for%20Web%20Series%20Movies%20Entertainment%20Show&npa=0&pscdl=noapi&auid=1931096598.1753097178&uaa=x86&uab=64&uafvl=Not)A%253BBrand%3B8.0.0.0%7CChromium%3B138.0.7204.158%7CGoogle%2520Chrome%3B138.0.7204.158&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&fledge=1&data=event%3Dform_submit
-Iframe src: https://api.razorpay.com/v1/checkout/public?traffic_env=baseline&build=11bf28affb66ddc37431fcf4c46f66f1c66a9aaa&build_v1=9178825fcaa29bff305ce60d80aa466c65beadfe&checkout_v2=1&new_session=1
-Player iframe not found.
-]]></system-out>
-    <system-err><![CDATA[Jul 21, 2025 4:56:16 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
-]]></system-err>
-  </testcase>
-  <testcase name="footerTermsAndConditionsTest" classname="Chull.TestCase" time="5.947">
-    <system-out><![CDATA[Total iframes: 7
-iframe ID: support
-iframe SRC: https://chull.ottsnap.in/pages/3
-iframe ID: 
-iframe SRC: https://td.doubleclick.net/td/rul/17013215611?random=1753097196928&cv=11&fst=1753097196928&fmt=3&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be57g1z89221036923za200zb9221036923&gcd=13l3l3l3l1l1&dma=0&tag_exp=101509157~103116026~103200004~103233427~104573694~104684208~104684211&u_w=1024&u_h=768&url=https%3A%2F%2Fchull.tv%2F&hn=www.googleadservices.com&frm=0&npa=0&pscdl=noapi&auid=2079136329.1753097197&uaa=x86&uab=64&uafvl=Not)A%253BBrand%3B8.0.0.0%7CChromium%3B138.0.7204.158%7CGoogle%2520Chrome%3B138.0.7204.158&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&fledge=1&data=event%3Dgtag.config
-iframe ID: 
-iframe SRC: https://td.doubleclick.net/td/rul/17013215611?random=1753097197003&cv=11&fst=1753097197003&fmt=3&bg=ffffff&guid=ON&async=1&gtm=45be57g1z89221036923za200zb9221036923&gcd=13l3l3l3l1l1&dma=0&tag_exp=101509157~103116026~103200004~103233427~104573694~104684208~104684211&u_w=1024&u_h=768&url=https%3A%2F%2Fchull.tv%2F&hn=www.googleadservices.com&frm=0&npa=0&pscdl=noapi&auid=2079136329.1753097197&uaa=x86&uab=64&uafvl=Not)A%253BBrand%3B8.0.0.0%7CChromium%3B138.0.7204.158%7CGoogle%2520Chrome%3B138.0.7204.158&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&fledge=1&_tu=Cg
-iframe ID: 
-iframe SRC: 
-iframe ID: 
-iframe SRC: https://td.doubleclick.net/td/rul/17013215611?random=1753097199525&cv=11&fst=1753097199525&fmt=3&bg=ffffff&guid=ON&async=1&en=form_start&gtm=45be57g1za200zb9221036923&gcd=13l3l3l3l1l1&dma=0&tag_exp=101509157~103116026~103200004~103233427~104573694~104684208~104684211&u_w=1024&u_h=768&url=https%3A%2F%2Fchull.tv%2Flogin&hn=www.googleadservices.com&frm=0&tiba=Chull%20Tv%20-%20OTT%20Platform%20for%20Web%20Series%20Movies%20Entertainment%20Show&npa=0&pscdl=noapi&auid=2079136329.1753097197&uaa=x86&uab=64&uafvl=Not)A%253BBrand%3B8.0.0.0%7CChromium%3B138.0.7204.158%7CGoogle%2520Chrome%3B138.0.7204.158&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&fledge=1&data=event%3Dform_start
-iframe ID: 
-iframe SRC: https://td.doubleclick.net/td/rul/17013215611?random=1753097199543&cv=11&fst=1753097199543&fmt=3&bg=ffffff&guid=ON&async=1&en=form_submit&gtm=45be57g1za200zb9221036923&gcd=13l3l3l3l1l1&dma=0&tag_exp=101509157~103116026~103200004~103233427~104573694~104684208~104684211&u_w=1024&u_h=768&url=https%3A%2F%2Fchull.tv%2Flogin&hn=www.googleadservices.com&frm=0&tiba=Chull%20Tv%20-%20OTT%20Platform%20for%20Web%20Series%20Movies%20Entertainment%20Show&npa=0&pscdl=noapi&auid=2079136329.1753097197&uaa=x86&uab=64&uafvl=Not)A%253BBrand%3B8.0.0.0%7CChromium%3B138.0.7204.158%7CGoogle%2520Chrome%3B138.0.7204.158&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&fledge=1&data=event%3Dform_submit
-iframe ID: 
-iframe SRC: https://td.doubleclick.net/td/rul/17013215611?random=1753097199944&cv=11&fst=1753097199944&fmt=3&bg=ffffff&guid=ON&async=1&en=form_submit&gtm=45be57g1za200zb9221036923&gcd=13l3l3l3l1l1&dma=0&tag_exp=101509157~103116026~103200004~103233427~104573694~104684208~104684211&u_w=1024&u_h=768&url=https%3A%2F%2Fchull.tv%2Flogin&hn=www.googleadservices.com&frm=0&tiba=Chull%20Tv%20-%20OTT%20Platform%20for%20Web%20Series%20Movies%20Entertainment%20Show&npa=0&pscdl=noapi&auid=2079136329.1753097197&uaa=x86&uab=64&uafvl=Not)A%253BBrand%3B8.0.0.0%7CChromium%3B138.0.7204.158%7CGoogle%2520Chrome%3B138.0.7204.158&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&fledge=1&data=event%3Dform_submit
-✅ Element is visible inside iframe.
-]]></system-out>
-    <system-err><![CDATA[Jul 21, 2025 4:56:35 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
-]]></system-err>
-  </testcase>
-  <testcase name="logoutTest" classname="Chull.TestCase" time="11.944">
-    <system-err><![CDATA[Jul 21, 2025 4:56:45 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
-]]></system-err>
-  </testcase>
-  <testcase name="filterValuesTest" classname="Chull.TestCase" time="20.303">
-    <system-out><![CDATA[https://chull.tv/language/Hindi/1
-]]></system-out>
-    <system-err><![CDATA[Jul 21, 2025 4:57:01 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
-]]></system-err>
-  </testcase>
-  <testcase name="viewAllTest" classname="Chull.TestCase" time="15.625">
-    <system-out><![CDATA[Is Top 10 content visible: true
-]]></system-out>
-    <system-err><![CDATA[Jul 21, 2025 4:57:27 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
-]]></system-err>
-  </testcase>
-  <testcase name="checkRelatedvideo" classname="Chull.TestCase" time="35.952">
-    <system-out><![CDATA[Popup closed.
-Total iframes found: 8
-Iframe src: https://chull.tv/player.html?file=https://vz-1dab6337-9e3.b-cdn.net/b26e6d82-36e0-40a7-aaf3-a1e5616f6ee6/playlist.m3u8&name=%7B%22id%22%3A389%2C%22name%22%3A%22Wanted%20Hot%20Room%20Mate%22%2C%22video_720%22%3A%22https%3A%5C%2F%5C%2Fvz-1dab6337-9e3.b-cdn.net%5C%2Fb26e6d82-36e0-40a7-aaf3-a1e5616f6ee6%5C%2Fplaylist.m3u8%22%2C%22maturity_rating%22%3A%22A%22%2C%22category_name%22%3A%22Romance%22%2C%22type_id%22%3A1%2C%22video_type%22%3A%22video%22%2C%22session_id%22%3A0%2C%22trailer_url%22%3A%22%22%7D&poster=https://ottimages.b-cdn.net/playerposter.jpg&title=CHULL%20TV
-Unable to switch to iframe. Possibly cross-origin.
-]]></system-out>
-    <system-err><![CDATA[Jul 21, 2025 4:57:47 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
-]]></system-err>
-  </testcase>
-  <testcase name="Banner_is_visible" classname="Chull.TestCase" time="19.151">
-    <system-out><![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//img[@class="d-block w-100 mscreen image-gradient"]"}
-  (Session info: chrome=138.0.7204.158)
+  <testcase name="searchVideoTest" classname="Chull.TestCase" time="29.877">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//img[@class=&quot;img-top&quot;]&quot;}&#10;  (Session info: chrome=138.0.7204.169)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception&#10;Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [7c81deed8068089ba8786beb5d0a6f40, findElement {using=xpath, value=//img[@class=&quot;img-top&quot;]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.169, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61281}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61281/devtoo..., se:cdpVersion: 138.0.7204.169, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 7c81deed8068089ba8786beb5d0a6f40" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//img[@class="img-top"]"}
+  (Session info: chrome=138.0.7204.169)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.33.0', revision: '2c6aaad03a'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8dab13bc87e47383991e6246d268c40a, findElement {using=xpath, value=//img[@class="d-block w-100 mscreen image-gradient"]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.158, chrome: {chromedriverVersion: 138.0.7204.157 (e533e98b126..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55494}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55494/devtoo..., se:cdpVersion: 138.0.7204.158, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8dab13bc87e47383991e6246d268c40a
-]]></system-out>
-    <system-err><![CDATA[Jul 21, 2025 4:58:29 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Command: [7c81deed8068089ba8786beb5d0a6f40, findElement {using=xpath, value=//img[@class="img-top"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.169, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61281}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61281/devtoo..., se:cdpVersion: 138.0.7204.169, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7c81deed8068089ba8786beb5d0a6f40
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at Chull.TestCase.searchVideoTest(TestCase.java:150)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+]]></failure>
+    <system-err><![CDATA[Jul 29, 2025 11:13:01 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
 ]]></system-err>
   </testcase>
-  <testcase name="subscription" classname="Chull.TestCase" time="10.664">
+  <testcase name="wrongOtpLoginTest" classname="Chull.TestCase" time="7.237">
+    <system-out><![CDATA[Verify OTP
+]]></system-out>
+    <system-err><![CDATA[Jul 29, 2025 11:13:35 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
+]]></system-err>
+  </testcase>
+  <testcase name="playVideoTest" classname="Chull.TestCase" time="22.99">
+    <failure message="Expected condition failed: waiting for element to be clickable: By.xpath: //img[@alt=&apos;Love kills&apos;] (tried for 20 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.169, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61451}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61451/devtoo..., se:cdpVersion: 138.0.7204.169, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 4cf99f07ab5e62a829d52b6d21f2812b" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for element to be clickable: By.xpath: //img[@alt='Love kills'] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.169, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61451}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61451/devtoo..., se:cdpVersion: 138.0.7204.169, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4cf99f07ab5e62a829d52b6d21f2812b
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at Chull.TestCase.playVideoTest(TestCase.java:207)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+]]></failure>
+    <system-err><![CDATA[Jul 29, 2025 11:14:15 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
+]]></system-err>
+  </testcase>
+  <testcase name="footerTermsAndConditionsTest" classname="Chull.TestCase" time="6.09">
+    <system-out><![CDATA[Total iframes: 7
+iframe ID: support
+iframe SRC: https://chull.ottsnap.in/pages/3
+iframe ID: 
+iframe SRC: https://td.doubleclick.net/td/rul/17013215611?random=1753767884442&cv=11&fst=1753767884442&fmt=3&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be57s0h2z89221036923za200zb9221036923zd9221036923&gcd=13l3l3l3l1l1&dma=0&tag_exp=101509157~103116026~103200004~103233427~104684208~104684211~104948813&u_w=1024&u_h=768&url=https%3A%2F%2Fchull.tv%2F&hn=www.googleadservices.com&frm=0&npa=0&pscdl=noapi&auid=361641335.1753767884&uaa=x86&uab=64&uafvl=Not)A%253BBrand%3B8.0.0.0%7CChromium%3B138.0.7204.169%7CGoogle%2520Chrome%3B138.0.7204.169&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&fledge=1&data=event%3Dgtag.config
+iframe ID: 
+iframe SRC: https://td.doubleclick.net/td/rul/17013215611?random=1753767884494&cv=11&fst=1753767884494&fmt=3&bg=ffffff&guid=ON&async=1&gtm=45be57s0h2z89221036923za200zb9221036923zd9221036923&gcd=13l3l3l3l1l1&dma=0&tag_exp=101509157~103116026~103200004~103233427~104684208~104684211~104948813&u_w=1024&u_h=768&url=https%3A%2F%2Fchull.tv%2F&hn=www.googleadservices.com&frm=0&npa=0&pscdl=noapi&auid=361641335.1753767884&uaa=x86&uab=64&uafvl=Not)A%253BBrand%3B8.0.0.0%7CChromium%3B138.0.7204.169%7CGoogle%2520Chrome%3B138.0.7204.169&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&fledge=1&_tu=Cg
+iframe ID: 
+iframe SRC: 
+iframe ID: 
+iframe SRC: https://td.doubleclick.net/td/rul/17013215611?random=1753767914677&cv=11&fst=1753767914677&fmt=3&bg=ffffff&guid=ON&async=1&en=form_start&gtm=45be57s0h2za200zb9221036923zd9221036923&gcd=13l3l3l3l1l1&dma=0&tag_exp=101509157~103116026~103200004~103233427~104684208~104684211~104948813&u_w=1024&u_h=768&url=https%3A%2F%2Fchull.tv%2Flogin&hn=www.googleadservices.com&frm=0&tiba=Chull%20Tv%20-%20OTT%20Platform%20for%20Web%20Series%20Movies%20Entertainment%20Show&npa=0&pscdl=noapi&auid=361641335.1753767884&uaa=x86&uab=64&uafvl=Not)A%253BBrand%3B8.0.0.0%7CChromium%3B138.0.7204.169%7CGoogle%2520Chrome%3B138.0.7204.169&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&fledge=1&data=event%3Dform_start
+iframe ID: 
+iframe SRC: https://td.doubleclick.net/td/rul/17013215611?random=1753767914691&cv=11&fst=1753767914691&fmt=3&bg=ffffff&guid=ON&async=1&en=form_submit&gtm=45be57s0h2za200zb9221036923zd9221036923&gcd=13l3l3l3l1l1&dma=0&tag_exp=101509157~103116026~103200004~103233427~104684208~104684211~104948813&u_w=1024&u_h=768&url=https%3A%2F%2Fchull.tv%2Flogin&hn=www.googleadservices.com&frm=0&tiba=Chull%20Tv%20-%20OTT%20Platform%20for%20Web%20Series%20Movies%20Entertainment%20Show&npa=0&pscdl=noapi&auid=361641335.1753767884&uaa=x86&uab=64&uafvl=Not)A%253BBrand%3B8.0.0.0%7CChromium%3B138.0.7204.169%7CGoogle%2520Chrome%3B138.0.7204.169&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&fledge=1&data=event%3Dform_submit
+iframe ID: 
+iframe SRC: https://td.doubleclick.net/td/rul/17013215611?random=1753767915038&cv=11&fst=1753767915038&fmt=3&bg=ffffff&guid=ON&async=1&en=form_submit&gtm=45be57s0h2za200zb9221036923zd9221036923&gcd=13l3l3l3l1l1&dma=0&tag_exp=101509157~103116026~103200004~103233427~104684208~104684211~104948813&u_w=1024&u_h=768&url=https%3A%2F%2Fchull.tv%2Flogin&hn=www.googleadservices.com&frm=0&tiba=Chull%20Tv%20-%20OTT%20Platform%20for%20Web%20Series%20Movies%20Entertainment%20Show&npa=0&pscdl=noapi&auid=361641335.1753767884&uaa=x86&uab=64&uafvl=Not)A%253BBrand%3B8.0.0.0%7CChromium%3B138.0.7204.169%7CGoogle%2520Chrome%3B138.0.7204.169&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&fledge=1&data=event%3Dform_submit
+✅ Element is visible inside iframe.
+]]></system-out>
+    <system-err><![CDATA[Jul 29, 2025 11:14:43 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
+]]></system-err>
+  </testcase>
+  <testcase name="logoutTest" classname="Chull.TestCase" time="10.431">
+    <system-err><![CDATA[Jul 29, 2025 11:15:20 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
+]]></system-err>
+  </testcase>
+  <testcase name="filterValuesTest" classname="Chull.TestCase" time="20.328">
+    <system-out><![CDATA[https://chull.tv/language/Hindi/1
+]]></system-out>
+    <system-err><![CDATA[Jul 29, 2025 11:15:35 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
+]]></system-err>
+  </testcase>
+  <testcase name="viewAllTest" classname="Chull.TestCase" time="32.856">
+    <failure message="Expected condition failed: waiting for visibility of element located by By.xpath: //div[contains(@class,&apos;view-list&apos;)] (tried for 10 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.169, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61744}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61744/devtoo..., se:cdpVersion: 138.0.7204.169, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 02da6d30664ae6cf3ef0a625242fe55b" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of element located by By.xpath: //div[contains(@class,'view-list')] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.169, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61744}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61744/devtoo..., se:cdpVersion: 138.0.7204.169, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 02da6d30664ae6cf3ef0a625242fe55b
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at Chull.TestCase.viewAllTest(TestCase.java:476)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+]]></failure>
+    <system-out><![CDATA[Top 10 link not clickable: Expected condition failed: waiting for element to be clickable: By.xpath: //a[contains(@href,'free-episode')] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.169, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61744}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61744/devtoo..., se:cdpVersion: 138.0.7204.169, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 02da6d30664ae6cf3ef0a625242fe55b
+]]></system-out>
+    <system-err><![CDATA[Jul 29, 2025 11:15:59 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
+]]></system-err>
+  </testcase>
+  <testcase name="checkRelatedvideo" classname="Chull.TestCase" time="23.493">
+    <failure message="Expected condition failed: waiting for element to be clickable: By.xpath: //img[@alt=&apos;Hello Pooja&apos;] (tried for 10 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.169, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61805}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61805/devtoo..., se:cdpVersion: 138.0.7204.169, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: f71aed230d28631409871cc30ff165a0" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for element to be clickable: By.xpath: //img[@alt='Hello Pooja'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.169, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61805}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61805/devtoo..., se:cdpVersion: 138.0.7204.169, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f71aed230d28631409871cc30ff165a0
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at Chull.TestCase.checkRelatedvideo(TestCase.java:634)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+]]></failure>
+    <system-err><![CDATA[Jul 29, 2025 11:16:36 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
+]]></system-err>
+  </testcase>
+  <testcase name="Banner_is_visible" classname="Chull.TestCase" time="18.818">
+    <system-out><![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//img[@class="d-block w-100 mscreen image-gradient"]"}
+  (Session info: chrome=138.0.7204.169)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8bb09f03c22e89699bd1e1077724d575, findElement {using=xpath, value=//img[@class="d-block w-100 mscreen image-gradient"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.169, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61868}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61868/devtoo..., se:cdpVersion: 138.0.7204.169, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8bb09f03c22e89699bd1e1077724d575
+]]></system-out>
+    <system-err><![CDATA[Jul 29, 2025 11:17:04 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
+]]></system-err>
+  </testcase>
+  <testcase name="subscription" classname="Chull.TestCase" time="11.82">
     <system-out><![CDATA[Subscription button is visible
 ]]></system-out>
-    <system-err><![CDATA[Jul 21, 2025 4:58:54 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Jul 29, 2025 11:18:36 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
 ]]></system-err>
   </testcase>
-  <testcase name="withoutLoginSubscriptionButtonisVisible" classname="Chull.TestCase" time="0.06">
+  <testcase name="withoutLoginSubscriptionButtonisVisible" classname="Chull.TestCase" time="0.786">
     <system-out><![CDATA[Visible
 ]]></system-out>
-    <system-err><![CDATA[Jul 21, 2025 4:59:09 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Jul 29, 2025 11:18:52 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
 ]]></system-err>
   </testcase>
-  <testcase name="check_SubscriptionisVisible" classname="Chull.TestCase" time="13.216">
+  <testcase name="check_SubscriptionisVisible" classname="Chull.TestCase" time="13.215">
     <system-out><![CDATA[Button 0 text: ₹79₹129
 Button 1 text: ₹149₹249
 Button 2 text: ₹329₹459
 Button 3 text: ₹579₹699
 ]]></system-out>
-    <system-err><![CDATA[Jul 21, 2025 4:59:12 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Jul 29, 2025 11:19:00 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
 ]]></system-err>
   </testcase>
-  <testcase name="checkUserBuySubscription" classname="Chull.TestCase" time="13.262">
+  <testcase name="checkUserBuySubscription" classname="Chull.TestCase" time="12.928">
     <system-out><![CDATA[User already purchase a subscription
 ]]></system-out>
-    <system-err><![CDATA[Jul 21, 2025 4:59:29 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Jul 29, 2025 11:19:44 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
 ]]></system-err>
   </testcase>
-  <testcase name="verifyPopupIsVisibleuserBuysubscription" classname="Chull.TestCase" time="18.314">
+  <testcase name="verifyPopupIsVisibleuserBuysubscription" classname="Chull.TestCase" time="18.243">
     <system-out><![CDATA[no such alert
-  (Session info: chrome=138.0.7204.158)
+  (Session info: chrome=138.0.7204.169)
 Build info: version: '4.33.0', revision: '2c6aaad03a'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e88bad8e6cfeff18174438030c654071, getAlertText {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.158, chrome: {chromedriverVersion: 138.0.7204.157 (e533e98b126..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55924}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55924/devtoo..., se:cdpVersion: 138.0.7204.158, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e88bad8e6cfeff18174438030c654071
+Command: [81ed48d0494268ea8f0e79faa12d14e3, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.169, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61186}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61186/devtoo..., se:cdpVersion: 138.0.7204.169, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 81ed48d0494268ea8f0e79faa12d14e3
 ]]></system-out>
-    <system-err><![CDATA[Jul 21, 2025 4:59:47 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Jul 29, 2025 11:20:30 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
 ]]></system-err>
   </testcase>
-  <testcase name="verifyurl" classname="Chull.TestCase" time="0.016">
+  <testcase name="verifyurl" classname="Chull.TestCase" time="0.014">
     <system-out><![CDATA[passed
 ]]></system-out>
-    <system-err><![CDATA[Jul 21, 2025 5:00:10 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Jul 29, 2025 11:20:52 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
 ]]></system-err>
   </testcase>
-  <testcase name="checkTagname" classname="Chull.TestCase" time="0.018">
+  <testcase name="checkTagname" classname="Chull.TestCase" time="0.023">
     <system-out><![CDATA[verify the url
 ]]></system-out>
-    <system-err><![CDATA[Jul 21, 2025 5:00:13 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Jul 29, 2025 11:20:55 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
 ]]></system-err>
   </testcase>
-  <testcase name="countTotalVideosWithNames" classname="Chull.TestCase" time="1.758">
-    <system-out><![CDATA[Total number of videos: 37
+  <testcase name="countTotalVideosWithNames" classname="Chull.TestCase" time="1.582">
+    <system-out><![CDATA[Total number of videos: 33
 ]]></system-out>
-    <system-err><![CDATA[Jul 21, 2025 5:00:18 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Jul 29, 2025 11:20:59 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
 ]]></system-err>
   </testcase>
-  <testcase name="ApplestoreButtonTest" classname="Chull.TestCase" time="15.461">
+  <testcase name="ApplestoreButtonTest" classname="Chull.TestCase" time="14.809">
     <system-out><![CDATA[🔗 Redirected URL: https://apps.apple.com/in/app/chull/id6744243409
 ]]></system-out>
-    <system-err><![CDATA[Jul 21, 2025 5:00:24 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Jul 29, 2025 11:21:04 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
 ]]></system-err>
   </testcase>
-  <testcase name="playstore" classname="Chull.TestCase" time="15.225">
+  <testcase name="playstore" classname="Chull.TestCase" time="15.046">
     <system-out><![CDATA[🔗 Redirected URL: https://play.google.com/store/apps/details?id=com.ott.chulbull&hl=en_IN
 ]]></system-out>
-    <system-err><![CDATA[Jul 21, 2025 5:00:45 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Jul 29, 2025 11:21:51 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
 ]]></system-err>
   </testcase>
-  <testcase name="checkcouponprice" classname="Chull.Testcase2" time="16.977">
+  <testcase name="checkcouponprice" classname="Chull.Testcase2" time="18.614">
     <system-out><![CDATA[2.00.00
 ]]></system-out>
-    <system-err><![CDATA[Jul 21, 2025 5:01:05 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Jul 29, 2025 11:22:39 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
 ]]></system-err>
   </testcase>
-  <testcase name="couponPercentage" classname="Chull.Testcase2" time="18.614">
+  <testcase name="couponPercentage" classname="Chull.Testcase2" time="19.348">
     <system-out><![CDATA[2.37.00
 Applied coupon code
 ]]></system-out>
-    <system-err><![CDATA[Jul 21, 2025 5:01:26 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Jul 29, 2025 11:23:02 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
 ]]></system-err>
   </testcase>
-  <testcase name="checkrazorpayopen" classname="Chull.Testcase2" time="37.019">
+  <testcase name="checkrazorpayopen" classname="Chull.Testcase2" time="37.093">
     <system-out><![CDATA[2.37.00
 Applied coupon code
 Exception: no such element: Unable to locate element: {"method":"xpath","selector":"//button[normalize-space()='Continue']"}
-  (Session info: chrome=138.0.7204.158)
+  (Session info: chrome=138.0.7204.169)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.33.0', revision: '2c6aaad03a'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [708d258efe7ff31852603efcdafd0ff2, findElement {using=xpath, value=//button[normalize-space()='Continue']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.158, chrome: {chromedriverVersion: 138.0.7204.157 (e533e98b126..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56678}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56678/devtoo..., se:cdpVersion: 138.0.7204.158, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 708d258efe7ff31852603efcdafd0ff2
+Command: [72f9bef647ec66e877fc83139c48e6c6, findElement {using=xpath, value=//button[normalize-space()='Continue']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.169, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56209}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56209/devtoo..., se:cdpVersion: 138.0.7204.169, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 72f9bef647ec66e877fc83139c48e6c6
 ]]></system-out>
-    <system-err><![CDATA[Jul 21, 2025 5:01:50 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Jul 29, 2025 11:23:26 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
 ]]></system-err>
   </testcase>
-  <testcase name="Validate_No_Data_message_is_visible" classname="Chull.Testcase2" time="19.911">
+  <testcase name="Validate_No_Data_message_is_visible" classname="Chull.Testcase2" time="19.595">
     <system-out><![CDATA[No data available
 ]]></system-out>
-    <system-err><![CDATA[Jul 21, 2025 5:02:31 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Jul 29, 2025 11:24:08 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
 ]]></system-err>
   </testcase>
-  <testcase name="clickwatchnow_userredirect_into_login" classname="Chull.Testcase2" time="7.393">
+  <testcase name="clickwatchnow_userredirect_into_login" classname="Chull.Testcase2" time="7.416">
     <system-out><![CDATA[true
 ]]></system-out>
-    <system-err><![CDATA[Jul 21, 2025 5:02:55 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Jul 29, 2025 11:24:31 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
 ]]></system-err>
   </testcase>
-  <testcase name="insidecouponpagebannerisvisible" classname="Chull.Testcase2" time="12.911">
-    <system-out><![CDATA[Total number of banners: 7
+  <testcase name="insidecouponpagebannerisvisible" classname="Chull.Testcase2" time="13.182">
+    <system-out><![CDATA[Total number of banners: 1
 ]]></system-out>
-    <system-err><![CDATA[Jul 21, 2025 5:03:07 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Jul 29, 2025 11:24:42 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
 ]]></system-err>
   </testcase>
-  <testcase name="checkNoofBannerpresendInHomepage" classname="Chull.Testcase2" time="4.064">
-    <system-out><![CDATA[7
+  <testcase name="checkNoofBannerpresendInHomepage" classname="Chull.Testcase2" time="4.035">
+    <system-out><![CDATA[1
 ]]></system-out>
-    <system-err><![CDATA[Jul 21, 2025 5:03:25 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Jul 29, 2025 11:25:28 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
 ]]></system-err>
   </testcase>
-  <testcase name="checkAlllanguageIsvisible" classname="Chull.Testcase2" time="1.044">
+  <testcase name="checkAlllanguageIsvisible" classname="Chull.Testcase2" time="10.747">
+    <system-out><![CDATA[Total languages found: 0
+]]></system-out>
+    <system-err><![CDATA[Jul 29, 2025 11:25:36 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
+]]></system-err>
+  </testcase>
+  <testcase name="checkAlllanguageIsvisible" classname="Chull.Testcase2" time="1.025">
     <system-out><![CDATA[Total languages found: 5
 Language 1: Tamil
 Language 2: Telugu
@@ -325,14 +452,7 @@ Language 3: kannada
 Language 4: Hindi
 Language 5: Malayalam
 ]]></system-out>
-    <system-err><![CDATA[Jul 21, 2025 5:03:33 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
-]]></system-err>
-  </testcase>
-  <testcase name="checkAlllanguageIsvisible" classname="Chull.Testcase2" time="10.282">
-    <system-out><![CDATA[Total languages found: 0
-]]></system-out>
-    <system-err><![CDATA[Jul 21, 2025 5:04:07 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Jul 29, 2025 11:25:49 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
 ]]></system-err>
   </testcase>
