@@ -1,26 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite thread-count="2" parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
-  <test thread-count="2" parallel="classes" name="Play Video(failed)" verbose="0">
-    <classes>
-      <class name="Chull.TestCase">
-        <methods>
-          <include name="playVideoTest"/>
-          <include name="teardown"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- Chull.TestCase -->
-    </classes>
-  </test> <!-- Play Video(failed) -->
-  <test thread-count="2" parallel="classes" name="Check reltead video play or not(failed)" verbose="0">
+  <test thread-count="2" parallel="classes" name="Verify the url(failed)" verbose="0">
     <classes>
       <class name="Chull.TestCase">
         <methods>
           <include name="teardown"/>
           <include name="setup"/>
-          <include name="checkRelatedvideo"/>
+          <include name="verifyurl"/>
         </methods>
       </class> <!-- Chull.TestCase -->
     </classes>
-  </test> <!-- Check reltead video play or not(failed) -->
+  </test> <!-- Verify the url(failed) -->
 </suite> <!-- Failed suite [Suite] -->
