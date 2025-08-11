@@ -1,26 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite thread-count="2" parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="2" parallel="classes" name="Footer Terms Conditions(failed)">
+  <test thread-count="2" parallel="classes" name="check Detail page is open without login (failed)">
     <classes>
-      <class name="Chull.TestCase">
+      <class name="Amuzi.LoginTestCase">
         <methods>
+          <include name="detailedPageWithoutLoginTest"/>
           <include name="teardown"/>
           <include name="setup"/>
-          <include name="footerTermsAndConditionsTest"/>
         </methods>
-      </class> <!-- Chull.TestCase -->
+      </class> <!-- Amuzi.LoginTestCase -->
     </classes>
-  </test> <!-- Footer Terms Conditions(failed) -->
-  <test thread-count="2" parallel="classes" name="Check reltead video play or not(failed)">
-    <classes>
-      <class name="Chull.TestCase">
-        <methods>
-          <include name="teardown"/>
-          <include name="setup"/>
-          <include name="checkRelatedvideo"/>
-        </methods>
-      </class> <!-- Chull.TestCase -->
-    </classes>
-  </test> <!-- Check reltead video play or not(failed) -->
+  </test> <!-- check Detail page is open without login (failed) -->
 </suite> <!-- Failed suite [Suite] -->

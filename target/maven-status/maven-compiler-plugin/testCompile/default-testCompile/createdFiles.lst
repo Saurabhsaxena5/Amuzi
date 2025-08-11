@@ -1,0 +1,9 @@
+Amuzi\CommonTestCase.class
+Amuzi\LoginTestCase.class
+Amuzi\Subscription.class
+Amuzi\Footer.class
+Amuzi\SearchVideoTest.class
+Amuzi\UpdateProfile.class
+Amuzi\WatchList.class
+Amuzi\PlayerTestCase.class
+Amuzi\ViewAllTestCase.class

@@ -1,15 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite thread-count="2" parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
-  <test thread-count="2" parallel="classes" name="Verify the url(failed)" verbose="0">
+  <test thread-count="2" parallel="classes" name="check Detail page is open without login (failed)" verbose="0">
     <classes>
-      <class name="Chull.TestCase">
+      <class name="Amuzi.LoginTestCase">
         <methods>
+          <include name="detailedPageWithoutLoginTest"/>
           <include name="teardown"/>
           <include name="setup"/>
-          <include name="verifyurl"/>
         </methods>
-      </class> <!-- Chull.TestCase -->
+      </class> <!-- Amuzi.LoginTestCase -->
     </classes>
-  </test> <!-- Verify the url(failed) -->
+  </test> <!-- check Detail page is open without login (failed) -->
+  <test thread-count="2" parallel="classes" name="Verify the url of Amuzi(failed)" verbose="0">
+    <classes>
+      <class name="Amuzi.CommonTestCase">
+        <methods>
+          <include name="verifyurl"/>
+          <include name="teardown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- Amuzi.CommonTestCase -->
+    </classes>
+  </test> <!-- Verify the url of Amuzi(failed) -->
+  <test thread-count="2" parallel="classes" name="Verify Filter Button is working properly or not(failed)" verbose="0">
+    <classes>
+      <class name="Amuzi.CommonTestCase">
+        <methods>
+          <include name="filterButtonClickTest"/>
+          <include name="teardown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- Amuzi.CommonTestCase -->
+    </classes>
+  </test> <!-- Verify Filter Button is working properly or not(failed) -->
 </suite> <!-- Failed suite [Suite] -->
