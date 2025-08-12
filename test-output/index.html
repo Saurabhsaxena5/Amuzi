@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Yash\AppData\Local\Temp\testng-eclipse-798862888\testng-customsuite.xml</span>
+                    <span>C:\Users\Yash\AppData\Local\Temp\testng-eclipse--1038011020\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -104,7 +104,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Amuzi.CommonTestCase" class="method navigator-link" hash-for-method="filterButtonClickTest">filterButtonClickTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="Amuzi.PlayerTestCase" class="method navigator-link" hash-for-method="checkRelatedvideo">checkRelatedvideo</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -122,22 +122,23 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">Amuzi.CommonTestCase</span>
+              <span class="class-name">Amuzi.PlayerTestCase</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="filterButtonClickTest">
-                  </a> <!-- filterButtonClickTest -->
-                  <span class="method-name">filterButtonClickTest</span>
-                  <div class="stack-trace">org.openqa.selenium.JavascriptException: javascript error: Cannot read properties of null (reading &apos;scrollBy&apos;)
+                  <a name="checkRelatedvideo">
+                  </a> <!-- checkRelatedvideo -->
+                  <span class="method-name">checkRelatedvideo</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;img src=&quot;https://ottimages.b-cdn.net/ottsnap/images/video/CwofL2O50CwtbMLBy8CE3yQgzmSYOFwM7gE5iGad.jpg?width=250&amp;amp;quality=100&quot; class=&quot;img-top&quot; alt=&quot;...&quot; loading=&quot;lazy&quot; style=&quot;height: 230px;&quot;&gt; is not clickable at point (164, 67). Other element would receive the click: &lt;ul class=&quot;menu-bar-ul&quot;&gt;...&lt;/ul&gt;
   (Session info: chrome=138.0.7204.169)
 Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0154b9b934b25c6368158f8fb3740304, executeScript {args=[], script=document.querySelector(&apos;.dropdown-menu&apos;).scrollBy(0,100)}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.169, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\Yash\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57922}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57922/devtoo..., se:cdpVersion: 138.0.7204.169, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 0154b9b934b25c6368158f8fb3740304
+Command: [6329ee40729554ba36c00eed6311cdfa, clickElement {id=f.5F19ECBE8DADF34107529EBF86D2F659.d.73E98C35296C33205E39DB2190BB1AD7.e.83}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.169, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\Yash\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54456}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54456/devtoo..., se:cdpVersion: 138.0.7204.169, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (6329ee40729554ba36c00eed6311cdfa)] -&gt; xpath: (//img[@class=&apos;img-top&apos;])[1]]
+Session ID: 6329ee40729554ba36c00eed6311cdfa
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -148,8 +149,9 @@ Session ID: 0154b9b934b25c6368158f8fb3740304
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
-	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:475)
-	at Amuzi.CommonTestCase.filterButtonClickTest(CommonTestCase.java:110)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at Amuzi.PlayerTestCase.checkRelatedvideo(PlayerTestCase.java:173)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -185,7 +187,7 @@ Session ID: 0154b9b934b25c6368158f8fb3740304
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Yash\AppData\Local\Temp\testng-eclipse-798862888\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Yash\AppData\Local\Temp\testng-eclipse--1038011020\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -194,11 +196,11 @@ Session ID: 0154b9b934b25c6368158f8fb3740304
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Amuzi.CommonTestCase&quot;&gt;
+      &lt;class name=&quot;Amuzi.PlayerTestCase&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;filterButtonClickTest&quot;/&gt;
+          &lt;include name=&quot;checkRelatedvideo&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- Amuzi.CommonTestCase --&gt;
+      &lt;/class&gt; &lt;!-- Amuzi.PlayerTestCase --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -240,14 +242,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'filterButtonClickTest')
-data.setCell(0, 2, 'Amuzi.CommonTestCase')
-data.setCell(0, 3, 49);
+data.setCell(0, 1, 'checkRelatedvideo')
+data.setCell(0, 2, 'Amuzi.PlayerTestCase')
+data.setCell(0, 3, 41175);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 49 ms</span>
+              <span class="suite-total-time">Total running time: 41 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -262,53 +264,27 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">23 ignored methods</span>
+            <span class="header-content">10 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">Amuzi.CommonTestCase</span>
+              <span class="ignored-class-name">Amuzi.PlayerTestCase</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">loginWithPhoneNumber</span>
+                <span class="ignored-method-name">loginWithMailTest</span>
                 <br/>
-                <span class="ignored-method-name">checkAlllanguageIsvisible</span>
+                <span class="ignored-method-name">loginWithPhoneNumber</span>
                 <br/>
                 <span class="ignored-method-name">logoutTest</span>
                 <br/>
                 <span class="ignored-method-name">detailedPageWithoutLoginTest</span>
                 <br/>
-                <span class="ignored-method-name">verifyurl</span>
-                <br/>
-                <span class="ignored-method-name">Banner_is_visible</span>
-                <br/>
-                <span class="ignored-method-name">footerTermsAndConditionsTest</span>
-                <br/>
-                <span class="ignored-method-name">playstore</span>
-                <br/>
-                <span class="ignored-method-name">ApplestoreButtonTest</span>
-                <br/>
-                <span class="ignored-method-name">Validate_No_Data_message_is_visible</span>
-                <br/>
-                <span class="ignored-method-name">countTotalVideosWithNames</span>
-                <br/>
-                <span class="ignored-method-name">viewAllTest</span>
-                <br/>
-                <span class="ignored-method-name">loginWithMailTest</span>
-                <br/>
                 <span class="ignored-method-name">clickwatchnow_userredirect_into_login</span>
                 <br/>
-                <span class="ignored-method-name">checkNoofBannerpresendInHomepage</span>
-                <br/>
                 <span class="ignored-method-name">wrongOtpLoginTest</span>
-                <br/>
-                <span class="ignored-method-name">LanguageButton</span>
                 <br/>
                 <span class="ignored-method-name">playVideoTest</span>
                 <br/>
                 <span class="ignored-method-name">withoutLoginSubscriptionButtonisVisible</span>
-                <br/>
-                <span class="ignored-method-name">checkTagname</span>
-                <br/>
-                <span class="ignored-method-name">verifyCurrentUrlTest</span>
                 <br/>
                 <span class="ignored-method-name">loginWithwrongMailTest</span>
                 <br/>
@@ -324,7 +300,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Amuzi.CommonTestCase</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">Amuzi.PlayerTestCase</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
                 <span class="method-start">0 ms</span>
@@ -332,12 +308,12 @@ return data;
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">filterButtonClickTest</span>
-                <span class="method-start">4696 ms</span>
+                <span class="method-name">checkRelatedvideo</span>
+                <span class="method-start">5105 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">4757 ms</span>
+                <span class="method-start">46287 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -4,6 +4,7 @@ import java.time.Duration;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.ElementClickInterceptedException;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.TimeoutException;
@@ -117,108 +118,136 @@ public class PlayerTestCase extends SearchVideoTest {
 	
 	@Test
 	public void checkRelatedvideo() throws InterruptedException {
+	    driver.findElement(By.xpath("//a[@href='/login']")).click();
+	    Thread.sleep(2000);
 
-		driver.findElement(By.xpath("//a[@href=\"/login\"]")).click();
-		Thread.sleep(2000);
+	    WebElement enterphoneNumber = driver.findElement(By.xpath("//input[@placeholder='Mobile Number']"));
+	    enterphoneNumber.sendKeys("8920689888");
 
-		WebElement enterphoneNumber = driver.findElement(By.xpath("//input[@placeholder=\"Mobile Number\"]"));
-		enterphoneNumber.sendKeys("8920689888");
+	    driver.findElement(By.xpath("//button[normalize-space(.)='Send OTP']")).click();
+	    driver.findElement(By.xpath("//input[@name='otp']")).sendKeys("1234");
+	    Thread.sleep(4000);
 
-		driver.findElement(By.xpath("//button[normalize-space(.)='Send OTP']")).click();
+	    WebElement clickOnSendOtp = driver.findElement(By.xpath("//button[normalize-space(.)='Verify OTP']"));
+	    Thread.sleep(2000);
+	    clickOnSendOtp.click();
 
-		driver.findElement(By.xpath("//input[@name=\"otp\"]")).sendKeys("1234");
-		Thread.sleep(4000);
-		WebElement clickOnSendOtp = driver.findElement(By.xpath("//button[normalize-space(.)='Verify OTP']"));
-		Thread.sleep(2000);
-		clickOnSendOtp.click();
+	    driver.findElement(By.xpath("//a[@href='/search']")).click();
+	    Thread.sleep(3000);
 
-		driver.findElement(By.xpath("//a[@href='/search']")).click();
-		Thread.sleep(3000);
-		WebElement searchBox = driver.findElement(By.xpath("//input[@type='text']"));
-		searchBox.sendKeys("Prati Roju Pandage");
-		WebElement ClickOnvideo = wait
-				.until(ExpectedConditions.elementToBeClickable(By.xpath("//img[@alt='Prati Roju Pandage']")));
-		ClickOnvideo.click();
+	    WebElement searchBox = driver.findElement(By.xpath("//input[@type='text']"));
+	    searchBox.sendKeys("Athletics Goa");
 
-		Thread.sleep(10000);
+	    // Wait until the image is present
+	    WebElement ClickOnvideo = wait.until(ExpectedConditions.presenceOfElementLocated(
+	        By.xpath("(//img[@alt='Athletics Goa'])[1]")
+	    ));
 
-		JavascriptExecutor jse = (JavascriptExecutor) driver;
-		jse.executeScript("window.scrollBy(0,700)");
-		Thread.sleep(3000);
+	    // Scroll into view to avoid sticky headers
+	    ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({block: 'center'});", ClickOnvideo);
 
-		WebElement clickonvideo = wait
-				.until(ExpectedConditions.elementToBeClickable(By.xpath("//img[@class=\"img-top\"]")));
-		clickonvideo.click();
+	    // Wait for overlays or loaders to disappear if present
+	    try {
+	        wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".overlay, .loader")));
+	    } catch (Exception e) {
+	        System.out.println("No blocking overlay/loader found.");
+	    }
 
-		WebElement watchVideo = wait
-				.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[contains(@class, 'sc-fUnMCh')]")));
-		watchVideo.click();
-		Thread.sleep(5000);
+	    // Try normal click, fallback to JS click if intercepted
+	    try {
+	        wait.until(ExpectedConditions.elementToBeClickable(ClickOnvideo)).click();
+	        System.out.println("Clicked video normally.");
+	    } catch (ElementClickInterceptedException e) {
+	        System.out.println("Normal click intercepted. Trying JavaScript click...");
+	        ((JavascriptExecutor) driver).executeScript("arguments[0].click();", ClickOnvideo);
+	    }
 
-		// Step 4: Close popup if exists
-		try {
-			WebElement popup = wait
-					.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@class='cancelbtn']")));
-			popup.click();
-			System.out.println("Popup closed.");
-		} catch (TimeoutException e) {
-			System.out.println("No popup found.");
-		}
+	    Thread.sleep(10000);
 
-		// Step 5: Detect player iframe
-		List<WebElement> iframes = driver.findElements(By.tagName("iframe"));
-		System.out.println("Total iframes found: " + iframes.size());
+	    JavascriptExecutor jse = (JavascriptExecutor) driver;
+	    jse.executeScript("window.scrollBy(0,700)");
+	    Thread.sleep(3000);
 
-		WebElement playerFrame = null;
-		for (WebElement iframe : iframes) {
-			String src = iframe.getAttribute("src");
-			System.out.println("Iframe src: " + src);
-			if (src != null && src.contains("chull.tv/player.html")) {
-				playerFrame = iframe;
-				break;
-			}
-		}
+	    WebElement clickonvideo = wait
+	            .until(ExpectedConditions.elementToBeClickable(By.xpath("(//img[@class='img-top'])[1]")));
+	    clickonvideo.click();
 
-		if (playerFrame == null) {
-			System.out.println("Player iframe not found.");
-			return;
-		}
+	    WebElement watchVideo = wait
+	            .until(ExpectedConditions.elementToBeClickable(By.xpath("//button[contains(@class, 'sc-fUnMCh')]")));
+	    watchVideo.click();
+	    Thread.sleep(5000);
 
-		// Step 6: Switch to iframe
-		try {
-			driver.switchTo().frame(playerFrame);
-			System.out.println("Switched to iframe: " + playerFrame.getAttribute("src"));
-		} catch (Exception e) {
-			System.out.println("Unable to switch to iframe. Possibly cross-origin.");
-			return;
-		}
+	    // Close popup if exists
+	    try {
+	        WebElement popup = wait
+	                .until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@class='cancelbtn']")));
+	        popup.click();
+	        System.out.println("Popup closed.");
+	    } catch (TimeoutException e) {
+	        System.out.println("No popup found.");
+	    }
 
-		// Step 7: Wait for video or play control
-		try {
-			wait.until(driver1 -> ((JavascriptExecutor) driver1).executeScript(
-					"return document.querySelector('video') != null || document.querySelector('.vjs-play-control') != null"));
-			System.out.println("Video or play control found in iframe.");
-		} catch (TimeoutException e) {
-			System.out.println("No video or play control found inside iframe.");
-			driver.switchTo().defaultContent();
-			return;
-		}
+	    // Detect player iframe
+	    List<WebElement> iframes = driver.findElements(By.tagName("iframe"));
+	    System.out.println("Total iframes found: " + iframes.size());
 
-		// Step 8: Attempt to play the video via JS
-		try {
-			((JavascriptExecutor) driver).executeScript("var video = document.querySelector('video');" + "if (video) {"
-					+ "  video.muted = true;" + "  video.play();" + "  console.log('HTML5 video playback started');"
-					+ "} else {" + "  var playBtn = document.querySelector('.vjs-play-control, [aria-label=\"Play\"]');"
-					+ "  if (playBtn) playBtn.click();" + "  console.log('Clicked custom play button');" + "}");
-			System.out.println("Playback script executed.");
-		} catch (Exception e) {
-			System.out.println("Playback script failed: " + e.getMessage());
-		}
+	    WebElement playerFrame = null;
+	    for (WebElement iframe : iframes) {
+	        String src = iframe.getAttribute("src");
+	        System.out.println("Iframe src: " + src);
+	        if (src != null && src.contains("chull.tv/player.html")) {
+	            playerFrame = iframe;
+	            break;
+	        }
+	    }
 
-		// Step 9: Switch back to main content
-		driver.switchTo().defaultContent();
-		System.out.println("Switched back to main content.");
+	    if (playerFrame == null) {
+	        System.out.println("Player iframe not found.");
+	        return;
+	    }
+
+	    // Switch to iframe
+	    try {
+	        driver.switchTo().frame(playerFrame);
+	        System.out.println("Switched to iframe: " + playerFrame.getAttribute("src"));
+	    } catch (Exception e) {
+	        System.out.println("Unable to switch to iframe. Possibly cross-origin.");
+	        return;
+	    }
+
+	    // Wait for video or play control
+	    try {
+	        wait.until(driver1 -> ((JavascriptExecutor) driver1).executeScript(
+	                "return document.querySelector('video') != null || document.querySelector('.vjs-play-control') != null"));
+	        System.out.println("Video or play control found in iframe.");
+	    } catch (TimeoutException e) {
+	        System.out.println("No video or play control found inside iframe.");
+	        driver.switchTo().defaultContent();
+	        return;
+	    }
+
+	    // Attempt to play video via JS
+	    try {
+	        ((JavascriptExecutor) driver).executeScript(
+	                "var video = document.querySelector('video');" +
+	                "if (video) {" +
+	                "  video.muted = true;" +
+	                "  video.play();" +
+	                "  console.log('HTML5 video playback started');" +
+	                "} else {" +
+	                "  var playBtn = document.querySelector('.vjs-play-control, [aria-label=\"Play\"]');" +
+	                "  if (playBtn) playBtn.click();" +
+	                "  console.log('Clicked custom play button');" +
+	                "}"
+	        );
+	        System.out.println("Playback script executed.");
+	    } catch (Exception e) {
+	        System.out.println("Playback script failed: " + e.getMessage());
+	    }
+
+	    // Switch back to main content
+	    driver.switchTo().defaultContent();
+	    System.out.println("Switched back to main content.");
 	}
-
 
 }

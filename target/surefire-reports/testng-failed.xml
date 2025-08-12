@@ -34,4 +34,37 @@
       </class> <!-- Amuzi.CommonTestCase -->
     </classes>
   </test> <!-- Verify Filter Button is working properly or not(failed) -->
+  <test thread-count="2" parallel="classes" name="Click video is playing(failed)" verbose="0">
+    <classes>
+      <class name="Amuzi.PlayerTestCase">
+        <methods>
+          <include name="teardown"/>
+          <include name="playVideoTest"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- Amuzi.PlayerTestCase -->
+    </classes>
+  </test> <!-- Click video is playing(failed) -->
+  <test thread-count="2" parallel="classes" name="Check related video playing(failed)" verbose="0">
+    <classes>
+      <class name="Amuzi.PlayerTestCase">
+        <methods>
+          <include name="teardown"/>
+          <include name="checkRelatedvideo"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- Amuzi.PlayerTestCase -->
+    </classes>
+  </test> <!-- Check related video playing(failed) -->
+  <test thread-count="2" parallel="classes" name="Validate User easily addead a video into the watchlist or not(failed)" verbose="0">
+    <classes>
+      <class name="Amuzi.WatchList">
+        <methods>
+          <include name="teardown"/>
+          <include name="watchlist"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- Amuzi.WatchList -->
+    </classes>
+  </test> <!-- Validate User easily addead a video into the watchlist or not(failed) -->
 </suite> <!-- Failed suite [Suite] -->

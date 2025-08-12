@@ -211,7 +211,7 @@
 	</test>
 	<test name="Check search video is playing">
 		<classes>
-			<class name="Amuzi.searchVideoTest">
+			<class name="Amuzi.SearchVideoTest">
 				<methods>
 					<include name="searchVideoTest" />
 				</methods>
@@ -220,7 +220,7 @@
 	</test>
 	<test name="Validate User update their profile">
 		<classes>
-			<class name="Amuzi.searchVideoTest">
+			<class name="Amuzi.UpdateProfile">
 				<methods>
 					<include name="updateProfileTest" />
 				</methods>
@@ -229,7 +229,7 @@
 	</test>
 	<test name="Validate ViewAll Button is workable">
 		<classes>
-			<class name="Amuzi.searchVideoTest">
+			<class name="Amuzi.ViewAllTestCase">
 				<methods>
 					<include name="viewAllTest" />
 				</methods>
@@ -238,7 +238,7 @@
 	</test>
 	<test name="Validate User easily addead a video into the watchlist or not">
 		<classes>
-			<class name="Amuzi.searchVideoTest">
+			<class name="Amuzi.WatchList">
 				<methods>
 					<include name="watchlist" />
 				</methods>

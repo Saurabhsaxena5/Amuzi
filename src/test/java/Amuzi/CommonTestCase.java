@@ -30,7 +30,7 @@ public class CommonTestCase extends ViewAllTestCase {
 	public void verifyurl() {
 
 		String actualurl = driver.getCurrentUrl();
-		String Expectedurl = "https://chull.tv/";
+		String Expectedurl = "https://amuzi.in/";
 		if (actualurl.equals(Expectedurl)) {
 			System.out.println("passed");
 		} else {
