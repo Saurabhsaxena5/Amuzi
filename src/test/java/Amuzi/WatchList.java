@@ -32,7 +32,7 @@ public class WatchList extends Subscription {
 		Thread.sleep(3000);
 
 		WebElement clickonVideo = wait
-				.until(ExpectedConditions.elementToBeClickable(By.xpath("//img[@alt='Athletics Goa']")));
+				.until(ExpectedConditions.elementToBeClickable(By.xpath("(//img[@class='img-top'])[1]")));
 		clickonVideo.click();
 
 		WebElement checkvideoIsalreadyinwatchlist = wait.until(ExpectedConditions.elementToBeClickable(

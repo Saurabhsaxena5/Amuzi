@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Amuzi.PlayerTestCase">
+      <class name="Amuzi.WatchList">
         <methods>
-          <include name="checkRelatedvideo"/>
           <include name="teardown"/>
+          <include name="watchlist"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- Amuzi.PlayerTestCase -->
+      </class> <!-- Amuzi.WatchList -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
